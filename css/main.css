@@ -1,0 +1,295 @@
+html {
+    -overflow-y: scroll;
+}
+body,
+iframe {
+    color: #333;
+}
+body,
+input,
+textarea {
+    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+header,
+footer,
+section,
+aside,
+article,
+nav,
+hgroup,
+figure,
+figcaption,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+form,
+p,
+dl,
+dt,
+dd,
+blockquote,
+legend,
+table,
+th,
+td,
+fieldset,
+menu,
+pre {
+    margin: 0;
+    padding: 0;
+}
+table,
+th,
+td,
+img {
+    border: 0;
+}
+time,
+mark,
+output,
+meter,
+address,
+cite,
+em,
+code,
+var,
+dfn,
+ins,
+i,
+th,
+caption {
+    font-style: normal;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    font-size: 100%;
+    font-weight: normal;
+}
+input,
+select,
+button,
+textarea,
+table {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+q:before,
+q:after {
+    content: "";
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th,
+caption {
+    text-align: left;
+}
+header,
+footer,
+section,
+aside,
+article,
+nav,
+hgroup,
+figure,
+figcaption {
+    display: block;
+}
+select {
+    padding: 0;
+    cursor: default;
+    border: none;
+}
+ul,
+ol {
+    list-style: none;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    -height: 100%;
+}
+input,
+textarea,
+div {
+    resize: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+a {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+    display: block;
+}
+.flex1 {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1 !important;
+}
+.display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+}
+.bees-env {
+    background-color: #00B83F;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50000;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+.bees-clear {
+    *zoom: 1;
+}
+.bees-dataGrid:before,
+.bees-form-item:before,
+.bees-clear:before {
+    content: ' ';
+    display: table;
+}
+.bees-row:after,
+.bees-form-item:after,
+.bees-clear:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.fl {
+    left: 0;
+}
+.fr {
+    right: 0;
+}
+.bees-mask {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+.bees-undis {
+    display: none !important;
+}
+.bees-loading {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #56abe4;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    margin-left: -32px;
+    margin-top: -32px;
+    background: url(data:image/png;base64,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) center center no-repeat;
+}
+.bees-logger {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 50%;
+    z-index: 50001;
+    overflow: auto;
+}
+.bees-rotate {
+    width: 64px;
+    height: 6px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -32px;
+    margin-top: -3px;
+    left: 50%;
+    top: 50%;
+}
+.bees-rotate:after {
+    width: 8px;
+    background: #56abe4;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    right: -4px;
+    border-radius: 50%;
+    content: "";
+}
+.rotate {
+    animation: .8s infinite rotate;
+    -webkit-animation: .8s infinite rotate;
+    -o-animation: .8s infinite rotate;
+    -moz-animation: .8s infinite rotate;
+    -ms-animation: .8s infinite rotate;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes rotate {
+    from {
+        -ms-transform: rotate(0);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
