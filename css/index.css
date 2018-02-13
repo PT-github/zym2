@@ -696,9 +696,15 @@ body {
     font-size:.19rem;
     color:#1c3e4f;
 }
-/*
-@media only screen and (max-height:829px){
-    .s_pc .solution-words{
-        padding-top: 20px;
+
+@media only screen and (max-height:760px){
+    .s_pc .swiper-2 .swiper-container-h,.s_pc .swiper-5,.s_pc .swiper-6 .contact-title{
+        margin-top:.4rem;
     }
-}*/
+    .s_pc .swiper-4 .company-title{
+        margin-top:.8rem;
+    }
+    .s_pc .swiper-7{
+        padding-top:10%;
+    }
+}
