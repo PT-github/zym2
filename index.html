@@ -40,14 +40,11 @@
                 <p class="title">真源码农产品追溯公共服务平台</p>
                 <p class="for">求真溯源，为农产品安全保驾护航</p>
                 <div class="search-content">
-                    <input type="text" onkeyup="formatHnm(this)" onkeypress="return commOnKeyPress_(event,'9',this,26)">
+                    <input type="text" placeholder="请输入真源码21位数字" id="search" onkeyup="formatHnm(this)" onkeypress="return commOnKeyPress_(event,'9',this,21)">
                     <span class="search-down" id="search-down"></span>
                     <span class="search-btn" id="search-btn"></span>
                     <ul class="search-option">
-                        <li>选项1</li>
-                        <li>选项2</li>
-                        <li>选项3</li>
-                        <li>选项4</li>
+                        <li>010120183609021112340</li>
                     </ul>
                 </div>
                 <div class="flex-box pro-pic-box">
@@ -355,5 +352,7 @@
 <script src="lib/swiper/js/swiper.min.js"></script>
 <script src="lib/zepto/zepto.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/commValidate.js"></script>
+<script src="js/validate.js"></script>
 </body>
 </html>

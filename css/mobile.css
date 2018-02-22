@@ -335,8 +335,8 @@
     background-image: url(../imgs/product_03.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 2.27rem;
-    height: 2.27rem;
+    width: 2.1rem;
+    height: 2.1rem;
     background-position: center center;
 }
 .s_phone .swiper-5 .product-pic-box .product-pic-title {
@@ -521,7 +521,7 @@
     float: left;
 }
 .s_phone .menu-container .right {
-    background-color: rgba(60, 65, 68, 0.7);
+    background-color: rgba(60, 65, 68, 1);
     float: right;
     width: 50%;
     height: 100%;
@@ -536,26 +536,25 @@
     font-size: 0.3rem;
     background-repeat: no-repeat;
     background-image: url(../imgs/telphone.png);
-    background-position: 32px center;
-    text-indent: 80px;
-    background-size: 40px;
+    background-position: .32rem center;
+    text-indent: .8rem;
+    background-size: .4rem;
     text-align: left;
 }
 .s_phone .menu-container .right nav a {
     display: block;
     color: #FFF;
     font-size: 0.3rem;
-    width: 1.7rem;
     margin: 0 auto .3rem;
-    padding-left: 40px;
+    padding-left: .8rem;
     line-height: .5rem;
     height: .5rem;
 }
 .s_phone .menu-container .right nav a:first-child{
-    background-image:url("../imgs/home.png");
+    background-image: url(../imgs/home.png);
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 35px;
+    background-position: .4rem center;
+    background-size: .35rem;
 }
 .s_phone .menu-container .right hr{margin:0}
 .s_phone .menu-container.menu-active {

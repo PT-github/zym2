@@ -159,6 +159,8 @@ body {
     float: left;
     background:#FFF;
     border:none;
+    font-size: .3rem;
+    padding: 0 .1rem;
 }
 .s_pc .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content .search-down{
     background-image: url(../imgs/down.png);
