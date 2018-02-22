@@ -15,6 +15,9 @@ $(document).ready(function(){
                     $('.platform-enter-flex').css('display','none');
                 }
             },
+            transitionStart: function(){
+                $('.search-option').removeClass('search-option-active');
+            },
             transitionEnd: function(){
                 if(swiper.activeIndex === 0){
                     $('.platform-enter-flex').css('display','none');
@@ -30,7 +33,7 @@ $(document).ready(function(){
             }
         }
     });
-    // swiper.slideTo(6, 2, false);//切换到第一个slide，速度为1秒
+    // swiper.slideTo(5, 2, false);//切换到第一个slide，速度为1秒
     /*左右滚动*/
     var swiperV = new Swiper('.swiper-container-h', {
         nested:true,
@@ -66,16 +69,31 @@ $(document).ready(function(){
     $('.swiper-button-next').bind('click',function(){
         swiperV.slideNext();
     });
-    // $('#pmenu').bind('click',function(){
-    //     $('.menu-container').addClass('menu-active');
-    // });
-    // $('body').bind('click',function(e){
-    //     var target = e.target;
-    //     var box = $('.right-con')[0];
-    //     if(!box.contains(target) && target.className.indexOf('menu') === -1){
-    //         $('.menu-container').removeClass('menu-active');
-    //     }
-    // })
+    $('#pmenu').bind('click',function(){
+        $('.menu-container').addClass('menu-active');
+    });
+    $('body').bind('click',function(e){
+        var target = e.target;
+        var box = $('.right-con')[0];
+        if(!box.contains(target) && target.className.indexOf('menu') === -1){
+            $('.menu-container').removeClass('menu-active');
+        }
+        box = $('.search-option')[0];
+        if(!box.contains(target) && target.className.indexOf('search-down') === -1){
+            $('.search-option').removeClass('search-option-active');
+        }
+    });
+    $('.search-option li').click(function(e){
+        if($(this).hasClass('active')){
+            return;
+        } else {
+            $('.search-option').siblings('input').val($(this).html());
+        }
+        $('.search-option').removeClass('search-option-active');
+    });
+    $('#search-down').bind('click',function(e){
+        $('.search-option').toggleClass('search-option-active');
+    });
 });
 function hideLoading(){
     $('.loading').addClass('loading-hide');

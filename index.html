@@ -41,8 +41,14 @@
                 <p class="for">求真溯源，为农产品安全保驾护航</p>
                 <div class="search-content">
                     <input type="text" onkeyup="formatHnm(this)" onkeypress="return commOnKeyPress_(event,'9',this,26)">
-                    <span class="search-down"></span>
-                    <span class="search-btn"></span>
+                    <span class="search-down" id="search-down"></span>
+                    <span class="search-btn" id="search-btn"></span>
+                    <ul class="search-option">
+                        <li>选项1</li>
+                        <li>选项2</li>
+                        <li>选项3</li>
+                        <li>选项4</li>
+                    </ul>
                 </div>
                 <div class="flex-box pro-pic-box">
                     <div class="line"></div>
@@ -235,7 +241,7 @@
                                     <option value="8">水产类-鱼</option>
                                     <option value="9">水产类-虾</option>
                                     <option value="10">水产类-螃蟹</option>
-                                    <!--<option value="11">水产类-龟鳖</option>
+                                    <option value="11">水产类-龟鳖</option>
                                     <option value="12">水产类-水藻</option>
                                     <option value="13">流通类-自产自销</option>
                                     <option value="14">流通类-农超对接</option>
@@ -244,7 +250,7 @@
                                     <option value="17">加工类-乳制品</option>
                                     <option value="18">加工类-肉制品</option>
                                     <option value="19">加工类-果蔬品</option>
-                                    <option value="20">加工类-中草药</option>-->
+                                    <option value="20">加工类-中草药</option>
                                 </select>
                             </div>
                         </div>
@@ -328,7 +334,7 @@
 <!--<section class="loading">
     <div class="load-pic"><img src="imgs/loading.gif" alt=""></div>
 </section>-->
-<!--<article class="menu-container">
+<article class="menu-container">
     <div class="left"></div>
     <div class="right">
         <div class="right-con">
@@ -344,7 +350,7 @@
             <div class="contact-no">400-400-008-8688</div>
         </div>
     </div>
-</article>-->
+</article>
 <script src="js/radio.js"></script>
 <script src="lib/swiper/js/swiper.min.js"></script>
 <script src="lib/zepto/zepto.min.js"></script>

@@ -63,6 +63,10 @@
     float: left;
     background: #FFF;
     border: none;
+    -webkit-appearance: none ;
+    border-radius: 0;
+    font-size:.25rem;
+    padding: 0 .1rem;
 }
 .s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content .search-down {
     background-image: url(../imgs/down.png);
@@ -121,6 +125,7 @@
     font-family: 'LiSu';
     height: .6rem;
     line-height: .6rem;
+    font-weight: bold;
 }
 .s_phone .swiper-2 .platform-detail .platform-detail-content {
     font-size: .26rem;
@@ -143,7 +148,7 @@
 }
 .s_phone .swiper-2 .swiper-container-h {
     flex: 1;
-    margin: 1.6rem 5% 0;
+    margin: 1rem 5% 0;
     overflow: hidden;
     z-index: 100;
 }
@@ -158,9 +163,8 @@
     height: 100%;
 }
 .s_phone .swiper-3 .solution-row {
-    /*flex: 1;*/
+    height: 6rem;
     width: 100%;
-    height: 8.6rem;
     background-image: url(../imgs/h5/h5bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,10 +181,10 @@
     background-position: center 0.24rem;
     background-size: contain;
     background-repeat: no-repeat;
-    height:4.22rem;
+    height:3.5rem;
 }
 .s_phone .swiper-3 .solution-row .solution-top .solution-col:last-child {
-    height:4.3rem;
+    height:3.8rem;
 }
 .s_phone .swiper-3 .solution-icon-row2 {
     height: 3.5rem;
@@ -240,8 +244,9 @@
     font-size: .38rem;
     line-height: .38rem;
     margin: .1rem 0 0.1rem;
-    width: 3.1rem;
+    width: 100%;
     color: #224d5e;
+    font-weight: bold;
 }
 .s_phone .swiper-3 .solution-row .solution-top .solution-col .solution-content {
     font-size: .28rem;
@@ -272,11 +277,12 @@
     -ms-flex-direction: column;
 }
 .s_phone .swiper-4 .company-title {
-    margin-top: 1.26rem;
+    margin-top: .8rem;
     margin-bottom:0.6rem;
     font-size: .45rem;
     font-family: 'LiSu';
     color: #FFF;
+    font-weight: bold;
 }
 .s_phone .swiper-4 .company-content {
     width: 3rem;
@@ -297,7 +303,7 @@
 }
 .s_phone .swiper-5 {
     width: 5.4rem;
-    margin: 0.6rem auto 0;
+    margin: 0.1rem auto 0;
     height: 100%;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -307,12 +313,13 @@
 .s_phone .swiper-5 .product-title {
     font-size: .4rem;
     font-family: 'LiSu';
+    font-weight: bold;
 }
 .s_phone .swiper-5 .product-top-more{
     display:none;
 }
 .s_phone .swiper-5 .product-pic-box {
-    margin-top:0.8rem;
+    margin-top:0.1rem;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
@@ -339,6 +346,7 @@
 .s_phone .swiper-5 .product-more2{
     height:.5rem;
     line-height: .5rem;
+    z-index: 10000;
 }
 .s_phone .swiper-5 .product-more2 a{
     text-align: center;
@@ -359,10 +367,11 @@
     height: 100%;
 }
 .s_phone .swiper-6 .contact-title {
-    margin-top: 1.7rem;
+    margin-top: 1rem;
     font-size: .4rem;
     font-family: 'LiSu';
-    margin-bottom: 1.4rem;
+    margin-bottom: .8rem;
+    font-weight: bold;
 }
 .s_phone .swiper-6 .contact-nav {
     width: 94%;
@@ -495,4 +504,79 @@
 }
 .s_phone .swiper-7 .contact-box .company-detail .contact-add {
     background-image: url(../imgs/contact-icon_17.png);
+}
+.s_phone .menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+.s_phone .menu-container .left {
+    background: transparent;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.s_phone .menu-container .right {
+    background-color: rgba(60, 65, 68, 0.7);
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.s_phone .menu-container .right nav {
+    padding-top: .4rem;
+}
+.s_phone .menu-container .right .contact-no {
+    color: #FFF;
+    height: .88rem;
+    line-height: .88rem;
+    font-size: 0.3rem;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/telphone.png);
+    background-position: 32px center;
+    text-indent: 80px;
+    background-size: 40px;
+    text-align: left;
+}
+.s_phone .menu-container .right nav a {
+    display: block;
+    color: #FFF;
+    font-size: 0.3rem;
+    width: 1.7rem;
+    margin: 0 auto .3rem;
+    padding-left: 40px;
+    line-height: .5rem;
+    height: .5rem;
+}
+.s_phone .menu-container .right nav a:first-child{
+    background-image:url("../imgs/home.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35px;
+}
+.s_phone .menu-container .right hr{margin:0}
+.s_phone .menu-container.menu-active {
+    display: block;
+}
+.s_phone .search-option{
+    position: absolute;
+    top: .8rem;
+    left: 0;
+    width: 5.2rem;
+    background: #FFF;
+    display:none;
+}
+.s_phone .search-option.search-option-active{
+    display:block;
+}
+.s_phone .search-option li{
+    font-size: .2rem;
+    height:.5rem;
+    line-height: .5rem;
+    text-align: left;
+    padding:0 .1rem;
+    border-top:1px solid rgba(204, 204, 204, 0.66);
 }

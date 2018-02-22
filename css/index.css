@@ -77,7 +77,7 @@ body {
     display: -webkit-flex;
     display: flex;
 }
-.s_pc .product-more2{
+.s_pc .product-more2,.s_pc .menu-container{
     display:none;
 }
 .s_pc header{
@@ -173,6 +173,7 @@ body {
     background-size: .23rem auto;
     background-color:#FFF;
     border-left:1px solid #FFF;
+    cursor: pointer;
 }
 .s_pc .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content .search-btn{
     width:.8rem;
@@ -294,10 +295,12 @@ body {
 }
 .s_pc .swiper-pagination-h{
     margin:.3rem;
+    height:0.08rem;
 }
 .s_pc .swiper-pagination-h .swiper-pagination-bullet{
     margin-right: .2rem;
     background-color:#9faea9;
+    vertical-align: top;
 }
 .s_pc .swiper-pagination-h .swiper-pagination-bullet-active{
     background-color:#33b752;
@@ -336,7 +339,7 @@ body {
     width:4.5rem;
     background-image:url('../imgs/zhu.png');
     background-position:center center;
-    background-size:90% auto;
+    background-size:contain;
     background-repeat:no-repeat;
 }
 .s_pc .swiper-3 .solution-row .solution-top .solution-col:last-child{
@@ -714,7 +717,25 @@ body {
     font-size:.19rem;
     color:#1c3e4f;
 }
-
+.s_pc .search-option{
+    position: absolute;
+    top: .8rem;
+    left: 0;
+    width: 5.2rem;
+    background: #FFF;
+    display:none;
+}
+.s_pc .search-option.search-option-active{
+    display:block;
+}
+.s_pc .search-option li{
+    font-size: .2rem;
+    height:.5rem;
+    line-height: .5rem;
+    text-align: left;
+    padding:0 .1rem;
+    border-top:1px solid rgba(204, 204, 204, 0.66);
+}
 @media only screen and (max-height:760px){
     .s_pc .swiper-2 .swiper-container-h,.s_pc .swiper-5,.s_pc .swiper-6 .contact-title{
         margin-top:.6rem;
@@ -724,5 +745,8 @@ body {
     }
     .s_pc .swiper-7{
         padding-top:10%;
+    }
+    .s_pc .swiper-3 .solution-row{
+        padding-top: .7rem;
     }
 }
