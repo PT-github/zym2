@@ -12,17 +12,14 @@ $(document).ready(function(){
         on:{
             touchMove: function(event){
                 if(swiper.activeIndex === 0){
-                    $('.platform-enter').addClass('platform-flex');
+                    $('.platform-enter-flex').css('display','none');
                 }
             },
             transitionEnd: function(){
                 if(swiper.activeIndex === 0){
-                    $('.platform-enter').removeClass('platform-flex').addClass('platform-enter-active');
-                    setTimeout(function(){
-                        $('.platform-enter').removeClass('platform-enter-active');
-                    },1000);
+                    $('.platform-enter-flex').css('display','none');
                 } else {
-                    $('.platform-enter').addClass('platform-flex')
+                    $('.platform-enter-flex').css('display','block');
                 }
             },
             init:function(){
