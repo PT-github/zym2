@@ -77,6 +77,9 @@ body {
     display: -webkit-flex;
     display: flex;
 }
+.s_pc .product-more2{
+    display:none;
+}
 .s_pc header{
     height: 1.2rem;
     background-image: url(../imgs/topbg.jpg);
@@ -368,6 +371,7 @@ body {
     /*width:3rem;*/
     width:100%;
     color:#FFF;
+    text-align: left;
 }
 .s_pc .swiper-3 .solution-row .solution-top .solution-col .solution-understand{
     font-size:.2rem;
@@ -713,7 +717,7 @@ body {
 
 @media only screen and (max-height:760px){
     .s_pc .swiper-2 .swiper-container-h,.s_pc .swiper-5,.s_pc .swiper-6 .contact-title{
-        margin-top:.4rem;
+        margin-top:.6rem;
     }
     .s_pc .swiper-4 .company-title{
         margin-top:.8rem;

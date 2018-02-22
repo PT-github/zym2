@@ -4,14 +4,23 @@
         , a = function() {
             var n = t.clientWidth;
             if (n) {
-                var whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
-                var wW = window.innerWidth * (window.devicePixelRatio || 1);// 当前窗口的宽度
-                console.log(wW + '----------------');
-                var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
-                t.className = 's_pc';
-                var i = window.devicePixelRatio || 1;
-                if(i){
-                    rem /= i;
+                var whdef,wW,rem,i = window.devicePixelRatio || 1;
+                if(n > 1200){
+                    whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
+                    wW = window.innerWidth * (i || 1);// 当前窗口的宽度
+                    rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+                    t.className = 's_pc';
+                    if(i){
+                        rem /= i;
+                    }
+                } else {
+                    whdef = 100/750;// 表示750的设计图,使用100PX的默认值
+                    wW = window.innerWidth * (i || 1);// 当前窗口的宽度
+                    rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+                    t.className = 's_phone';
+                    if(i){
+                        rem /= i;
+                    }
                 }
                 t.style.fontSize = rem +"px";
                 document.querySelector('meta[name="viewport"]');
@@ -23,10 +32,6 @@
         n.addEventListener("DOMContentLoaded", a, !1),
         a())
 }(document, window);
-// $(window).resize(function ()// 绑定到窗口的这个事件中
-// {
-//
-// });
 // !function(n, e) {
 //     var t = n.documentElement
 //         , i = "orientationchange" in window ? "orientationchange" : "resize"

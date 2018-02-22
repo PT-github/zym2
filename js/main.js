@@ -30,6 +30,7 @@ $(document).ready(function(){
             }
         }
     });
+    // swiper.slideTo(6, 2, false);//切换到第一个slide，速度为1秒
     /*左右滚动*/
     var swiperV = new Swiper('.swiper-container-h', {
         nested:true,

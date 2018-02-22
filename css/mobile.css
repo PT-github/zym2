@@ -1,0 +1,498 @@
+.s_phone header nav,.s_phone header .tel,.s_phone .platform-enter,.s_phone .swiper-container-vertical>.swiper-pagination-bullets,.s_phone .swiper-button{
+    display:none;
+}
+.s_phone header {
+    height: 0.88rem;
+    background-image: url(../imgs/topbg.jpg);
+}
+.s_phone header .logo {
+    width: 0.93rem;
+    height: 0.88rem;
+    background: url(../imgs/logo.png) no-repeat right center;
+    float: left;
+    background-size: .55rem auto;
+}
+.s_phone header .menu {
+    background-image: url(../imgs/menu.png);
+    float: right;
+    height: 0.88rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.7rem auto;
+    width: 1.2rem;
+}
+.s_phone .swiper-container-v {
+    position: absolute;
+    top: 0.88rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) {
+    background-image: url(../imgs/h5/h5bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center {
+    flex: 1;
+    width: 100%;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .title {
+    margin-top: 40%;
+    font-size: .36rem;
+    font-family: 'LiSu';
+    color: #FFF;
+    margin-bottom: .2rem;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .for {
+    font-size: .18rem;
+    margin-bottom: .36rem;
+    color: #fff;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content {
+    width: 6rem;
+    margin: 0 auto;
+    height: .8rem;
+    position: relative;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content input {
+    width: 4.4rem;
+    height: .8rem;
+    box-sizing: border-box;
+    float: left;
+    background: #FFF;
+    border: none;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content .search-down {
+    background-image: url(../imgs/down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    right: .8rem;
+    top: 0;
+    background-size: .23rem auto;
+    background-color: #FFF;
+    border-left: 1px solid #FFF;
+}
+.s_phone .swiper-container-v > .swiper-wrapper > .swiper-slide:nth-child(1) .swiper-center .search-content .search-btn {
+    width: .8rem;
+    height: .8rem;
+    background-color: #0e3369;
+    background-image: url(../imgs/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: .44rem;
+    float: right;
+}
+.s_phone .pro-pic-box {
+    height: .5rem;
+    width: 6rem;
+    margin: .2rem auto;
+}
+.s_phone .pro-pic-box .line {
+    flex: 1;
+    height: 50%;
+    border-bottom: 1px solid #FFF;
+}
+.s_phone .pro-pic-box .pro-pic {
+    width: 4rem;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url(../imgs/pro2.png);
+}
+.s_phone .swiper-2 {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+.s_phone .swiper-2 .platform-detail {
+    height: 50%;
+    width: 6.45rem;
+    margin: 0 auto;
+}
+.s_phone .swiper-2 .platform-detail .platform-detail-title {
+    font-size: .38rem;
+    font-family: 'LiSu';
+    height: .6rem;
+    line-height: .6rem;
+}
+.s_phone .swiper-2 .platform-detail .platform-detail-content {
+    font-size: .26rem;
+    line-height: .46rem;
+    text-align: left;
+}
+.s_phone .swiper-2 .platform-detail .platform-detail-content:last-child{
+    margin-top:0.3rem;
+}
+.s_phone .swiper-pagination-h {
+    margin: .1rem auto .8rem;
+}
+.s_phone .swiper-pagination-h .swiper-pagination-bullet {
+    margin-right: .2rem;
+    background-color: #9faea9;
+    float:left;
+}
+.s_phone .swiper-pagination-h .swiper-pagination-bullet-active {
+    background-color: #33b752;
+}
+.s_phone .swiper-2 .swiper-container-h {
+    flex: 1;
+    margin: 1.6rem 5% 0;
+    overflow: hidden;
+    z-index: 100;
+}
+.s_phone .swiper-2 .swiper-container-h .swiper-slide {
+    width: 90%;
+    border: 5px solid #FFF;
+    background-size: cover;
+}
+.s_phone .swiper-3 {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.s_phone .swiper-3 .solution-row {
+    /*flex: 1;*/
+    width: 100%;
+    height: 8.6rem;
+    background-image: url(../imgs/h5/h5bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s_phone .swiper-3 .solution-row .solution-top {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col:first-child {
+    width: 100%;
+    background-image: url(../imgs/zhu.png);
+    background-position: center 0.24rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:4.22rem;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col:last-child {
+    height:4.3rem;
+}
+.s_phone .swiper-3 .solution-icon-row2 {
+    height: 3.5rem;
+    background-color: #FFF;
+    width: 100%;
+}
+.s_phone .swiper-3 .solution-icon-row2 .solution-icon-box {
+    width: 6rem;
+    margin: .3rem auto 0;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.s_phone .swiper-3 .solution-icon-row2 .solution-icon-box .solution-icon {
+    width: 1.7rem;
+    height: 1.2rem;
+    background-position: center .1rem;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.s_phone .swiper-3 .solution-icon-row2 .solution-icon-box .solution-icon div {
+    flex: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: .6rem auto;
+}
+.s_phone .swiper-3 .solution-icon-row2 .solution-icon-box .solution-icon p {
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .16rem;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col .solution-words {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width:100%;
+    flex:1;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col .solution-title {
+    font-family: 'LiSu';
+    font-size: .38rem;
+    line-height: .38rem;
+    margin: .1rem 0 0.1rem;
+    width: 3.1rem;
+    color: #224d5e;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col .solution-content {
+    font-size: .28rem;
+    line-height: 0.36rem;
+    width: 80%;
+    color: #FFF;
+    margin:0 auto;
+    text-align: left;
+}
+.s_phone .swiper-3 .solution-row .solution-top .solution-col .solution-understand {
+    font-size: .25rem;
+    color: #FFF;
+    background-color: #1f377c;
+    width: 3rem;
+     margin: 0 auto;
+    height: .6rem;
+    line-height: .6rem;
+    margin-top: .15rem;
+}
+.s_phone .swiper-4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/h5/h5.bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+.s_phone .swiper-4 .company-title {
+    margin-top: 1.26rem;
+    margin-bottom:0.6rem;
+    font-size: .45rem;
+    font-family: 'LiSu';
+    color: #FFF;
+}
+.s_phone .swiper-4 .company-content {
+    width: 3rem;
+    margin: 0 auto;
+    position: relative;
+}
+.s_phone .swiper-4 .company-content .company-l {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:1rem;
+    margin-top:0.1rem;
+}
+.s_phone .swiper-4 .company-more a {
+    font-size: .27rem;
+    color: #1c3e4f;
+}
+.s_phone .swiper-5 {
+    width: 5.4rem;
+    margin: 0.6rem auto 0;
+    height: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+.s_phone .swiper-5 .product-title {
+    font-size: .4rem;
+    font-family: 'LiSu';
+}
+.s_phone .swiper-5 .product-top-more{
+    display:none;
+}
+.s_phone .swiper-5 .product-pic-box {
+    margin-top:0.8rem;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.s_phone .swiper-5 .product-pic-box .col-3 {
+    padding: .05rem .05rem .3rem .05rem;
+    background-color: #FFF;
+    position: relative;
+}
+.s_phone .swiper-5 .product-pic-box .product-pic {
+    background-image: url(../imgs/product_03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2.27rem;
+    height: 2.27rem;
+    background-position: center center;
+}
+.s_phone .swiper-5 .product-pic-box .product-pic-title {
+    font-size: .27rem;
+    margin-top: .16rem;
+}
+.s_phone .swiper-5 .product-more2{
+    height:.5rem;
+    line-height: .5rem;
+}
+.s_phone .swiper-5 .product-more2 a{
+    text-align: center;
+    font-size: .28rem;
+    color: #58635f;
+    display: block;
+    width: 3rem;
+    margin: 0 auto;
+}
+.s_phone .swiper-6 {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.s_phone .swiper-6 .contact-title {
+    margin-top: 1.7rem;
+    font-size: .4rem;
+    font-family: 'LiSu';
+    margin-bottom: 1.4rem;
+}
+.s_phone .swiper-6 .contact-nav {
+    width: 94%;
+    margin: 0 auto;
+    height: .6rem;
+}
+.s_phone .swiper-6 .contact-nav a {
+    flex: 1;
+    text-align: center;
+    background-color: #58635f;
+    color: #FFF;
+    font-size: .18rem;
+    line-height: .6rem;
+    border-right: 1px solid #47544f;
+}
+.s_phone .swiper-6 .contact-nav a.active {
+    background-color: #31a948;
+}
+.s_phone .swiper-6 .contact-content {
+    width: 6.2rem;
+    margin: .4rem auto 0;
+    flex: 1;
+}
+.s_phone .swiper-6 .contact-content form {
+    width: 100%;
+}
+.s_phone .swiper-6 .contact-content label {
+    flex: 1;
+    text-align: right;
+    line-height: .4rem;
+    font-size: .16rem;
+    color: #58635f;
+    margin-right: .05rem;
+    white-space: nowrap;
+}
+.s_phone .swiper-6 .contact-content label .col-red {
+    color: #e71a32;
+    font-size: .2rem;
+    padding: 0 5px;
+}
+.s_phone .swiper-6 .contact-content .input-control {
+    width: 5.15rem;
+    height: .4rem;
+    margin-bottom: .2rem;
+    position: relative;
+}
+.s_phone .swiper-6 .contact-content .input-control input, .s_phone .swiper-6 .contact-content .input-control select {
+    background: #eeeeee;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 .16rem;
+    font-size: .16rem;
+    display: block;
+}
+.s_phone .swiper-6 .contact-content .input-control:last-child .submit {
+    height: .6rem;
+    background-color: #31a948;
+    font-size: .18rem;
+    color: #FFF;
+    line-height: .6rem;
+}
+.s_phone .swiper-7 {
+    background-image: url(../imgs/h5/h5bg7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+}
+.s_phone .swiper-7 .contact-box {
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.s_phone .swiper-7 .contact-box .ewmPic {
+    width: 2.6rem;
+    height: 2.3rem;
+}
+.s_phone .swiper-7 .contact-box .ewmPic img {
+    width: 1.9rem;
+}
+.s_phone .swiper-7 .contact-box .ewmPic p {
+    font-size: .2rem;
+    line-height: 0;
+}
+.s_phone .swiper-7 .contact-box .company-detail {
+    text-align: left;
+    margin-top:.35rem;
+}
+.s_phone .swiper-7 .contact-box .company-detail .logo {
+    background-image: url(../imgs/hnlogo.png);
+    background-repeat: no-repeat;
+    background-position: 1.7rem center;
+    background-size: 1.2rem auto;
+    height: .4rem;
+}
+.s_phone .swiper-7 .contact-box .company-detail .logo p {
+    font-size: .12rem;
+    margin-left: 3rem;
+    padding-left: .12rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.70);
+}
+.s_phone .swiper-7 .contact-box .company-detail .contact-us {
+    margin-top: 1.35rem;
+    font-size: .35rem;
+    margin-bottom: .1rem;
+}
+.s_phone .swiper-7 .contact-box .company-detail .contact-l {
+    font-size: .25rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: .3rem;
+    margin-bottom: .2rem;
+    background-size: 0.25rem auto;
+}
+.s_phone .swiper-7 .contact-box .company-detail .contact-phone {
+    background-image: url(../imgs/contact-icon_09.png);
+}
+.s_phone .swiper-7 .contact-box .company-detail .contact-mail {
+    background-image: url(../imgs/contact-icon_13.png);
+}
+.s_phone .swiper-7 .contact-box .company-detail .contact-add {
+    background-image: url(../imgs/contact-icon_17.png);
+}
